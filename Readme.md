@@ -18,11 +18,11 @@ Ici on prend un **fichier csv** tiré de [cette compétition Kaggle](https://www
  
 **Parfait pour nous ;)**
 
-On charge les **phrases** depuis ce [répertoire Github](https://github.com/tkeldenich/NLP_Preprocessing).
+On charge les **phrases** depuis ce [répertoire Github](https://github.com/melossmani/NLP_Preprocessing).
 
 
 ```
-!git clone https://github.com/tkeldenich/NLP_Preprocessing.git &> /dev/null
+!git clone https://github.com/melossmani/NLP_Preprocessing.git &> /dev/null
 ```
 
 Puis on **insère ces données** dans un **Dataframe Pandas**.
@@ -32,7 +32,7 @@ Puis on **insère ces données** dans un **Dataframe Pandas**.
 import numpy as np
 import pandas as pd
 
-train_data = pd.read_csv('/content/NLP_Preprocessing/train.csv')
+train_data = pd.read_csv('/NLP_Preprocessing/train.csv')
 
 train_data.head()
 ```
@@ -238,7 +238,7 @@ Ensuite on **initialise** :
 
 ```
 french_stopwords = nltk.corpus.stopwords.words('french')
-mots = set(line.strip() for line in open('/content/NLP_Preprocessing/dictionnaire.txt'))
+mots = set(line.strip() for line in open('/NLP_Preprocessing/dictionnaire.txt'))
 lemmatizer = FrenchLefffLemmatizer()
 ```
 
@@ -743,7 +743,7 @@ On le **dézip :**
 ```
 from sh import gunzip
 
-gunzip('/content/word2vec_pretrained.bin.gz')
+gunzip('/word2vec_pretrained.bin.gz')
 ```
 
 
@@ -759,7 +759,7 @@ Puis on utilise la **fonction** *load_word2vec_format()* de la class *KeyedVecto
 ```
 from gensim.models import KeyedVectors
 
-model = KeyedVectors.load_word2vec_format('/content/word2vec_pretrained.bin', binary=True)  
+model = KeyedVectors.load_word2vec_format('/word2vec_pretrained.bin', binary=True)  
 ```
 
 On peut ensuite **l'utiliser** avec un **modèle de Deep Learning**..

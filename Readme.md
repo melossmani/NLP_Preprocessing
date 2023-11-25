@@ -27,7 +27,6 @@ On charge les **phrases** depuis ce [répertoire Github](https://github.com/melo
 
 Puis on **insère ces données** dans un **Dataframe Pandas**.
 
-
 ```
 import numpy as np
 import pandas as pd
@@ -35,8 +34,8 @@ import pandas as pd
 train_data = pd.read_csv('/NLP_Preprocessing/train.csv')
 
 train_data.head()
-
 ``'
+
 
 <div>
 <style scoped>

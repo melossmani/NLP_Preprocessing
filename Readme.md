@@ -839,7 +839,7 @@ display_closestwords_tsnescatterplot(model, 'challenge')
 
 
     
-![png](Readme_files/Readme_101_0.png)
+![png](Readme_101_0.png)
     
 
 

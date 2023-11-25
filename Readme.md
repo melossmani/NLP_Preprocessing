@@ -185,7 +185,7 @@ print('Phrase nettoyée : '+preprocess_list[2])
 
 ### **Texte en français**
 
-Ici on va d'abord installer **la librairie** [FrenchLefffLemmatizer](https://github.com/ClaudeCoulombe/FrenchLefffLemmatizer) qui permet d'effectuer une **lemmatization en français.**
+Ici on va d'abord installer **la librairie** [FrenchLefffLemmatizer] qui permet d'effectuer une **lemmatization en français.**
 
 
 ```
